@@ -5,12 +5,12 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - master
 permissions: read-all
 env:
   terraform: 1.3.5
   tf_target_dir: example/examplea
-  branch: main
+  branch: master
 jobs:
   terraform:
     env:
