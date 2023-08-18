@@ -21,6 +21,7 @@ resource "azurerm_resource_group" "test" {
 }
 
 resource "azurerm_service_plan" "example" {
+  #checkov:skip=CKV_AZURE_212:example
   name                = "example-serviceplan"
   location            = azurerm_resource_group.test.location
   resource_group_name = azurerm_resource_group.test.name
@@ -29,6 +30,13 @@ resource "azurerm_service_plan" "example" {
 }
 
 resource "azurerm_storage_account" "example" {
+  #checkov:skip=CKV_AZURE_33:example
+  #checkov:skip=CKV_AZURE_59:example
+  #checkov:skip=CKV_AZURE_44:example
+  #checkov:skip=CKV_AZURE_190:example
+  #checkov:skip=CKV2_AZURE_33:example
+  #checkov:skip=CKV2_AZURE_38:example
+  #checkov:skip=CKV2_AZURE_1:example
   name                     = "piketest"
   resource_group_name      = azurerm_resource_group.test.name
   location                 = azurerm_resource_group.test.location
@@ -40,4 +48,4 @@ resource "azurerm_storage_share" "example" {
   name                 = "pike"
   storage_account_name = azurerm_storage_account.example.name
   quota                = 50
-} 
+}

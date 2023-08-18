@@ -44,4 +44,3 @@ resource "azurerm_app_service" "pass" {
     type = "SystemAssigned"
   }
 }
-
