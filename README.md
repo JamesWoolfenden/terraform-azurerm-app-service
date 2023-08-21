@@ -136,7 +136,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-azur
 
 ## Copyrights
 
-Copyright � 2022-23 James Woolfenden
+Copyright © 2022-23 James Woolfenden
 
 ## License
 
