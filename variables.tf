@@ -20,7 +20,7 @@ variable "location" {
 variable "storage" {
   type = object({
     name         = string
-    type         = string
+    store_type   = string
     account_name = string
     share_name   = string
     access_key   = string
