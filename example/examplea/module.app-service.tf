@@ -5,7 +5,7 @@ module "app-service" {
   location    = azurerm_resource_group.test.location
   storage = {
     name         = "shady"
-    type         = "AzureFiles"
+    store_type   = "AzureFiles"
     account_name = azurerm_storage_account.example.name
     share_name   = azurerm_storage_share.example.name
     access_key   = azurerm_storage_account.example.primary_access_key

@@ -23,7 +23,7 @@ resource "azurerm_app_service" "pass" {
 
   storage_account {
     name         = var.storage.name
-    type         = var.storage.type
+    type         = var.storage.store_type
     account_name = var.storage.account_name
     share_name   = var.storage.share_name
     access_key   = var.storage.access_key
