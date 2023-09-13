@@ -61,7 +61,7 @@ No modules.
 | <a name="input_location"></a> [location](#input\_location) | n/a | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | n/a | `string` | n/a | yes |
 | <a name="input_rg_name"></a> [rg\_name](#input\_rg\_name) | (optional) describe your variable | `string` | n/a | yes |
-| <a name="input_storage"></a> [storage](#input\_storage) | n/a | <pre>object({<br>    name         = string<br>    type         = string<br>    account_name = string<br>    share_name   = string<br>    access_key   = string<br>    mount_path   = string<br>  })</pre> | n/a | yes |
+| <a name="input_storage"></a> [storage](#input\_storage) | n/a | <pre>object({<br>    name         = string<br>    store_type   = string<br>    account_name = string<br>    share_name   = string<br>    access_key   = string<br>    mount_path   = string<br>  })</pre> | n/a | yes |
 
 ## Outputs
 
